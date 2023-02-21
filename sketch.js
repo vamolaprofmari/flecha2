@@ -81,6 +81,7 @@ score = score + Math.round(frameCount/60)
 
   if (arrowGroup.isTouching(redB)) {
     redB.destroyEach();
+    score = score +1
     gameState = END;
 }
  
@@ -125,7 +126,7 @@ function blueBalloon() {
   blue.velocityX = 3;
   blue.lifetime = 150;
   blue.scale = 0.1;
-  blueB.add(blue);
+  
 }
 
 function greenBalloon() {
@@ -134,7 +135,7 @@ function greenBalloon() {
   green.velocityX = 3;
   green.lifetime = 150;
   green.scale = 0.1;
-  greenB.add(green);
+  
 }
 
 function pinkBalloon() {
@@ -143,7 +144,7 @@ function pinkBalloon() {
   pink.velocityX = 3;
   pink.lifetime = 150;
   pink.scale = 1
-pinkB.add(pink);
+
 }
 
 // criando flecha para o arco
